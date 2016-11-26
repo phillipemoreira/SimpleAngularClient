@@ -1,0 +1,12 @@
+﻿<div>
+    <h3>View 1</h3>
+    <input type="text" data-ng-model="nameFilter" />
+    <ul>
+        <li data-ng-repeat="person in people | filter:nameFilter">
+            {{person.name | uppercase}} - {{person.age}}
+        </li>
+    </ul>
+
+    <br/>
+    <a href="#/view2">View2</a>
+</div>
